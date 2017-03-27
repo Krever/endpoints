@@ -1,7 +1,8 @@
-package endpoints.algebra
+package endpoints.newalgebra.ext
 
 import endpoints.Tupler
 import endpoints.algebra.BasicAuthentication.Credentials
+import endpoints.newalgebra.basic.Endpoints
 
 /**
   * Provides vocabulary to describe endpoints that use Basic HTTP authentication.
@@ -38,7 +39,7 @@ trait BasicAuthentication extends Endpoints {
 
 }
 
-object  BasicAuthentication {
+object BasicAuthentication {
   case class Credentials(username: String, password: String)
 }
 
